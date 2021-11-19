@@ -1,10 +1,10 @@
 public class Employee {
-    String employeeName;
-    int employeeNumber;
-    String dob;
-    String address;
-    Designation designation;
-    int organisation;
+    private String employeeName;
+    private int employeeNumber;
+    private String dob;
+    private String address;
+    private Designation designation;
+    private int organisation;
     Employee(){
 
     }
@@ -18,43 +18,43 @@ public class Employee {
         this.organisation = Organization;
 
     }
-    void setEmployeeName(String name){
+    public void setEmployeeName(String name){
         employeeName=name;
     }
 
-    void setEmployeeNumber(int num){
+    public void setEmployeeNumber(int num){
         employeeNumber=num;
     }
-    void setdob(String dob){
+    public void setdob(String dob){
         this.dob=dob;
     }
-    void setAddress(String address){
+    public void setAddress(String address){
        this.address=address;
     }
-    void setDesignation(Designation desig){
+    public void setDesignation(Designation desig){
         designation=desig;
     }
-    void  setOrganisation(int org){
+    public void  setOrganisation(int org){
         organisation=org;
     }
 
 
-    String getEmployeeName(){
+    public String getEmployeeName(){
         return employeeName;
     }
-    int getEmployeeNumber(){
+    public int getEmployeeNumber(){
         return employeeNumber;
     }
-    String getDob(){
+    public String getDob(){
         return dob;
     }
-    String getAddress(){
+    public String getAddress(){
         return address;
     }
-    Designation getDesignation(){
+    public Designation getDesignation(){
         return designation;
     }
-    int getOrganisation(){
+    public int getOrganisation(){
         return organisation;
     }
     public String toString(){

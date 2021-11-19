@@ -7,24 +7,30 @@ import java.util.Scanner;
 public class EmployeeService  {
     static ArrayList<Employee> employees=new ArrayList<Employee>();
 
-    void register(Employee a){
+    public void register(Employee a){
         employees.add(a);
     }
-    void display(){
-        System.out.println(employees);
+    public void display(){
+        for(int i=0;i<employees.size();i++){
+            System.out.println(employees.get(i));
+        }
+//        System.out.println(employees);
 
     }
-    void displaySort(){
+    public void displaySort(){
         employees.sort((o1, o2)
                 -> o1.getEmployeeName().compareTo(
                 o2.getEmployeeName()));
 
         System.out.println("_______________________________________________________");
         System.out.println("Employee list after sorting");
-        System.out.println(employees);
+        for(int i=0;i<employees.size();i++){
+            System.out.println(employees.get(i));
+        }
+//        System.out.println(employees);
     }
 
-    void update(int index){
+    public void update(int index){
         Employee e=new Employee();
         e=employees.get(index);
         e.setDesignation(Designation.PROJECT_LEADER);
@@ -34,7 +40,7 @@ public class EmployeeService  {
         display();
 
     }
-    void remove(int index){
+    public void remove(int index){
         employees.remove(index);
         System.out.println("________________________________________________________\nEmployee details after removing an employee of index "+index);
         display();
