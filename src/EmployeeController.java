@@ -69,12 +69,12 @@ public class EmployeeController {
         es.register(e10);
 
         es.display();
-        
-        es.displaySort();
 
         es.update(6);
 
         es.remove(9);
+
+        es.displaySort();
 
     }
     public static int empNum(){
